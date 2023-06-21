@@ -11,9 +11,10 @@ export default function Content() {
   let params = useParams();
   //to useEffect θα γεμισει τον πινακα με ταινιες ενος συγκεκριμενου genre, το page εχει ενα counter που εχει αρχικη τιμη 1 ωστε να πηγαινουμε στην πρωτη σελιδα.
   useEffect(() => {
-    console.log(loadMovies);
+    // console.log(loadMovies);
     setMovies(loadMovies.data.results);
     setPage(loadMovies.data.page);
+    window.scrollTo({ top: 0 });
   }, [loadMovies]);
 
   return (
