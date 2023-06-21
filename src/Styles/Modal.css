@@ -61,3 +61,23 @@
   /* height: 100%; */
   object-fit: contain;
 }
+
+/* TABLET */
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .modal-content {
+    max-width: 400px;
+    min-width: 300px;
+    overflow-y: auto;
+    max-height: 800px;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 400px) {
+  .modal-content {
+    max-width: 400px;
+    min-width: 300px;
+    overflow-y: auto;
+    max-height: 600px;
+  }
+}
