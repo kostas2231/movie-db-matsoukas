@@ -28,7 +28,16 @@ export default function Content() {
       </div>
 
       <div class="pagination">
-        <Link to={`/${params.genre}/${page - 1}`}>❮</Link>
+        <Link
+          to={
+            page - 1 != 0
+              ? `/${params.genre}/${page - 1} `
+              : `/${params.genre}/1`
+          }
+        >
+          ❮
+        </Link>
+
         <div className="page_div">Σελίδα: {page} </div>
         <Link to={`/${params.genre}/${page + 1}`}>❯</Link>
       </div>
