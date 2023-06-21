@@ -1,0 +1,50 @@
+.content-wrapper {
+  background-color: #f4e5c2;
+}
+.card-box {
+  display: flex;
+  width: 100%;
+  background-color: #f4e5c2;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+  .card-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.page_div {
+  display: flex;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.pagination {
+  background-color: #f4e5c2;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pagination a {
+  background-color: rgb(206, 69, 69);
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  font-size: 30px;
+  transition-duration: 0.4s;
+}
+
+.pagination a:hover {
+  background-color: #a43b3b;
+  color: #f1f1f1;
+}
