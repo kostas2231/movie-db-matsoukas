@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/movie-db-matsoukas/static/css/main.c54b6d16.css",
+    "main.css": "/movie-db-matsoukas/static/css/main.cb59450e.css",
     "main.js": "/movie-db-matsoukas/static/js/main.ae489303.js",
     "static/js/787.bfed329b.chunk.js": "/movie-db-matsoukas/static/js/787.bfed329b.chunk.js",
     "index.html": "/movie-db-matsoukas/index.html",
-    "main.c54b6d16.css.map": "/movie-db-matsoukas/static/css/main.c54b6d16.css.map",
+    "main.cb59450e.css.map": "/movie-db-matsoukas/static/css/main.cb59450e.css.map",
     "main.ae489303.js.map": "/movie-db-matsoukas/static/js/main.ae489303.js.map",
     "787.bfed329b.chunk.js.map": "/movie-db-matsoukas/static/js/787.bfed329b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c54b6d16.css",
+    "static/css/main.cb59450e.css",
     "static/js/main.ae489303.js"
   ]
 }
