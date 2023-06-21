@@ -16,7 +16,16 @@ export default function Card(props) {
     );
     return res[0].name;
   }
+  function toHoursAndMinutes(totalMinutes) {
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
 
+    return `${Digits(hours)}:${Digits(minutes)}`;
+  }
+
+  function Digits(num) {
+    return num.toString().padStart(2, "0");
+  }
   //function για να γεμισω το object movieDetails με το εκαστοτε id της ταινιας
   const getMov = () => {
     MoviesService.getMovieById(props.movie.id, {
@@ -65,7 +74,7 @@ export default function Card(props) {
             <h1>Τίτλος: {movieDetails.title}</h1>
             <h2>Έτος κυκλοφορίας: {movieDetails.release_date}</h2>
             <p> {movieDetails.overview}</p>
-            <h3>Διάρκεια: {movieDetails.runtime} Λεπτά</h3>
+            <h3>Διάρκεια: {toHoursAndMinutes(movieDetails.runtime)} </h3>
             <h3>Σκηνοθέτης: {getDirector()}</h3>
             <h3>
               Ηθοποιοί: {movieDetails.credits.cast[0].name},
